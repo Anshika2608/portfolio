@@ -307,7 +307,7 @@
 
     }
     .education-content h4{
-        color:#e2ff06;
+        color:green;
         font-weight: bold;
     }
     .education-content h3{
@@ -441,7 +441,51 @@
     } 
     .skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span{
         width:15%; }
-    
+    /* projects  */
+    .projects-row{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding-left:100px;
+        align-items: center; 
+        gap:1.2rem;
+
+    }
+    .project1{
+        border:3px solid transparent;
+        border-radius: 2rem;
+        text-align: center;
+        padding:20px 8% 50px;
+        line-height: 2.9rem;
+        width:80%;
+        box-shadow: 0px 3px 12px 0px black;
+        height:500px;
+        background-color: rgb(13, 111, 13); 
+    }
+    .project1 h3{
+        font-size:2.4rem;
+        margin-top:1.3rem;
+        font-weight: bolder;
+        color:rgb(193, 249, 9);
+        margin-bottom: 1.2rem;
+    }
+    .project1 p{
+        font-size:2rem;
+        margin-bottom:1.7rem ;
+
+    }
+    .project1 strong{
+        color:rgb(193, 249, 9);
+
+    }
+    .project1 a{
+        font-size: 1.9rem;
+        color:white;
+    }
+    .project1 img{
+        height:45%;
+        width:45%;
+    }
+  
     
    
 
