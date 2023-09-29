@@ -75,7 +75,7 @@
     }
 }
     .right-box img{
-        height:50rem;
+        height:45rem;
         margin-left:40%;
         opacity:0.6;
         transition: .7s;
@@ -110,7 +110,7 @@
         position:relative;
         display:flex;
         justify-content: space-between;
-        width:34.5rem;
+        width:34.5rem; 
         height:5rem;
     }
     .btn-box .btn1{
@@ -201,6 +201,11 @@
     }
     .home-sci a:hover::before{
       width:100%;
+    }
+    #btn3{
+        display:flex;
+        justify-content: center;
+        align-items: center;
     }
     .about{
         display:flex;
