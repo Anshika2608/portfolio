@@ -274,31 +274,6 @@
     .btn-box.btn a::before{
         background: rgb(3, 88, 3);
     }
-     /* .education{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        /* min-height: auto;
-        padding-bottom:5rem ; */
-    /* .education .education-row{
-        display: flex;
-        flex-wrap: wrap;
-        gap:5rem;
-    }
-    .education-row .education-column{
-        flex:1 1 40rem;
-    }
-    .education-column .title{
-        font-size:2.5rem;
-        margin:0 0 1.5rem  2 rem;
-    }
-    .education-content .year i{
-        font-size: larg;
-    }
-    .education-content h3{
-        font-size:1.5rem;
-    } */ 
     .title p{
         font-size: 2.8rem;
         font-weight: bolder;
@@ -331,13 +306,28 @@
         border:1px solid transparent;
 
     }
-    .education-content h4,
+    .education-content h4{
+        color:#e2ff06;
+        font-weight: bold;
+    }
+    .education-content h3{
+        color:black;
+        font-weight: bolder;
+    }
+    .education-content p{
+        font-weight: 500;
+    }
     .education-content h3,
+    .education-content h4,
     .education-content p{
        text-align:center;
        font-size: 2.4rem;
     }
     .education-content div{
+        position:relative;
+        padding:1.5rem;
+        border-radius: .6rem;
+        margin-bottom: 2rem;
         opacity:0.5;
     }
     .education-content div:hover{
@@ -350,12 +340,109 @@
         height:16px;
         border-radius: 50%;
         left:-3.5%;
-        right:100%;
+        right:calc(100% + 22px);
         top:50%;
         background-color: #c7ee06;
         border: 2px solid white;
         
     }
+    @media(max-width:900px)
+    {
+        .education-row{
+            grid-template-columns: 1fr;
+        }
+    }
+    .skills{
+        min-height:auto;
+        padding-bottom:7rem;
+        background-color:rgb(13, 111, 13);
 
+    }
+    .skills .skills-row{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        flex-wrap:wrap;
+        gap:5rem;
+    }
+    @media(max-width:900px)
+        {
+            .skills .skills-row{
+                grid-template-columns: 1fr;
+            }
+        }
+    .skills-row .skills-column{
+        flex:1 1 40rem;
+
+    }
+    .skills-column .title{
+        font-size:2.5rem;
+        margin:0 0 1.5rem;
+    }
+    .skills-box .skills-content{
+        position:relative;
+        border:.2rem solid rgb(193, 249, 9);
+        border-radius:.6rem;
+        padding:.5rem  1.5rem;
+        z-index:1;
+        overflow:hidden;
+    }
+    .skills-box .skills-content::before{
+        content:'';
+        position:absolute;
+        top:0;
+        left:0;
+        width:0;
+        height:100%;
+        background:green;
+        z-index:-1;
+        transition:.5s;
+
+    }
+    .skills-box .skills-content:hover::before{
+      width:100%;
+    }
+    .skills-content .progress{
+        padding:1rem 0;
+    }
+    .skills-content .progress h3{
+        font-size:1.7rem;
+        display:flex;
+        justify-content:space-between;
+
+    }
+    .skills-content .progress .bar{
+        height:2.5rem;
+        border-radius: .6rem;
+        border: .2rem solid rgb(193, 249, 9);
+        padding:.5rem;
+        margin: 1rem 0;
+    }
+    .skills-content .progress .bar span{
+        display:block;
+        height:100%;
+        border-radius: .3rem;
+        background:rgb(193, 249, 9) ;
+    }
+
+    .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
+        width:90%;
+    }
+    .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
+        width:80%;
+    }
+    .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
+        width:75%;
+    }
+     .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
+         width:60%;
+    } 
+    .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span{
+        width:50%;
+    } 
+    .skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span{
+        width:15%; }
+    
+    
+   
 
 
