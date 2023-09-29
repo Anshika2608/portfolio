@@ -202,11 +202,11 @@
     .home-sci a:hover::before{
       width:100%;
     }
-    #btn3{
+     #btn3{
         display:flex;
         justify-content: center;
         align-items: center;
-    }
+    } 
     .about{
         display:flex;
         justify-content: center;
