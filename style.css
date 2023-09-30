@@ -108,7 +108,7 @@
     } 
 
     .home{
-        padding:100px 9%;
+        /* padding:100px 9%; */
         display: grid;
         grid-template-columns: repeat(2,1fr);
         /* grid-template-columns: repeat(auto-fit, minmax(250px, auto)); */
@@ -124,9 +124,9 @@
     .right-box img:hover{
         opacity:1;
     }
-    .left-box{
-        max-width:50rem;
-    }
+    /* .left-box{
+        max-width:60rem;
+    } */
     .left-box h1{
         font-size:5.6rem;
         font-weight:700;
@@ -144,8 +144,9 @@
         -webkit-text-stroke: .5px rgb(193, 249, 9);
     }
     .left-box p{
-        font-size:1.6rem;
+        font-size:1.8rem;
         margin:2rem 0 4rem;
+        line-height:2rem;
     }
     .btn-box{
         position:relative;
@@ -259,6 +260,13 @@
             margin-left:0;
         }
 
+     @media(max-width:630px){
+        .left-box p{
+            width: 90%;
+            
+        }
+    }
+
     }
      #btn3{
         display:flex;
@@ -273,6 +281,12 @@
         gap:2rem;
         padding-bottom: 6rem;
     }
+
+     @media(max-width:544px){
+          .about{
+          width: 519px;
+          } }
+    
     .heading{
         font-size: 5rem;
         margin-bottom: 3rem;
@@ -322,7 +336,7 @@
     .about-content p{
         font-size: 1.9rem;
         margin:2rem 0 3rem;
-        line-height: 2.1rem;
+        /* line-height: 2.1rem; */
     }
     .btn-box btns{
 
@@ -345,7 +359,15 @@
         display:grid;
         align-items: center;
         grid-template-columns: 1fr;
+    
     }
+
+    @media(max-width:544px){
+        .education{
+        width: 519px;
+        }
+    }
+
     .education .education-row{
         padding:0 30px;
     }
@@ -401,9 +423,18 @@
     .skills{
         min-height:auto;
         padding-bottom:7rem;
-        background-color:rgb(13, 111, 13);
+        background-color:green;
+        /* width: 105vw; */
 
     }
+    @media(max-width:550px){
+        .skills{
+        width: 577px;
+        }
+    }
+
+
+
     .skills .skills-row{
         display:grid;
         grid-template-columns: repeat(2,1fr);
@@ -439,7 +470,7 @@
         left:0;
         width:0;
         height:100%;
-        background:green;
+        background:rgb(13, 111, 13);
         z-index:-1;
         transition:.5s;
 
@@ -496,15 +527,19 @@
         gap:1.2rem;
 
     }
-    .project1{
-        border:3px solid transparent;
+    
+   @media(max-width:550px){
+        .Projects{
+        width: 577px;
+        }
+    } 
+    .project1{    border:3px solid transparent;
         border-radius: 2rem;
         text-align: center;
         padding:20px 8% 50px;
         line-height: 2.9rem;
         width:80%;
         box-shadow: 0px 3px 12px 0px black;
-        /* height:100%; */
         background-color: rgb(13, 111, 13); 
     }
     .project1 h3{
@@ -542,9 +577,37 @@
        
     }
     .contact{
-        text-align:center;
-        background-color: rgb(13, 111, 13);
-    }
+    text-align:center; 
+        /* background-image: url("green.jpeg");
+         /* background-color: rgb(13, 111, 13);  */
+        /* background-size: cover;  */ 
+  
+ 
+        /* background-color:rgb(13, 111, 13) ;  */
+
+    } 
+     /* @media(max-width:370px){
+        .contact{
+            max-width:none;
+            width:fit-content;
+        /* width: 577px; */
+         
+    
+    /* @media(max-width:590px){
+        .contact{
+            /* max-width:none;
+            width:fit-content; */
+        /* width: 577px; 
+        } 
+    } */ 
+    /* @media(max-width:1075px){
+        .contact{
+            max-width:none;
+            /* width:fit-content; */
+        /* width: 1073px;
+        } 
+    } */  
+    
     .contact p{
         font-size:2.9rem;
         margin-bottom: 50px;
