@@ -586,20 +586,20 @@
         /* background-color:rgb(13, 111, 13) ;  */
 
     } 
-     /* @media(max-width:370px){
+     /* /* @media(max-width:370px){
         .contact{
             max-width:none;
             width:fit-content;
         /* width: 577px; */
          
     
-    /* @media(max-width:590px){
+    @media(max-width:590px){
         .contact{
             /* max-width:none;
             width:fit-content; */
-        /* width: 577px; 
+        width: 577px; 
         } 
-    } */ 
+    } 
     /* @media(max-width:1075px){
         .contact{
             max-width:none;
